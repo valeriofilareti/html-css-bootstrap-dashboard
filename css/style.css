@@ -1,6 +1,8 @@
 .debug {
   background-color: rgba(49, 235, 88, .3);
+  border: 1px solid black;
 }
+/* header */
 header {
   height: 10vh;
   width: 100%;
@@ -8,14 +10,30 @@ header {
   top: 0;
   left: 0;
 }
+/* /header */
+/* main */
 main {
-  width: calc(100% - 15vw) ;
+  width: calc(100% - 120px) ;
   height: 90vh;
   margin-top: 10vh;
   overflow: auto;
 }
+.main-top {
+  background-color: aqua;
+}
+/* /main */
+/* left-bar */
 .vf-left-bar {
-  width: 15vw;
+  width: 120px;
   height: 90vh;
   float: left;
+}
+/* /left-bar */
+
+
+
+@media screen and (min-width:768px)  {
+  .stud {
+    order: 3;
+  }
 }
