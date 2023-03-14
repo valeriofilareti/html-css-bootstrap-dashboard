@@ -2,6 +2,9 @@
   background-color: rgba(49, 235, 88, .3);
   border: 1px solid black;
 }
+.vf-container {
+  width: 100%;
+}
 /* header */
 header {
   height: 10vh;
@@ -11,9 +14,17 @@ header {
   left: 0;
 }
 /* /header */
+/* left-bar */
+.vf-left-bar {
+  width: 60px;
+  height: 90vh;
+  float: left;
+  padding: 5px;
+}
+/* /left-bar */
 /* main */
 main {
-  width: calc(100% - 120px) ;
+  width: calc(100% - 60px) ;
   height: 90vh;
   margin-top: 10vh;
   overflow: auto;
@@ -22,18 +33,17 @@ main {
   background-color: aqua;
 }
 /* /main */
-/* left-bar */
-.vf-left-bar {
-  width: 120px;
-  height: 90vh;
-  float: left;
-}
-/* /left-bar */
 
 
 
 @media screen and (min-width:768px)  {
   .stud {
     order: 3;
+  }
+  .vf-left-bar {
+    width: 120px;
+  }
+  main {
+    width: calc(100% - 120px);
   }
 }
