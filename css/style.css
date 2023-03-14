@@ -1,0 +1,21 @@
+.debug {
+  background-color: rgba(49, 235, 88, .3);
+}
+header {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+main {
+  width: calc(100% - 15vw) ;
+  height: 90vh;
+  margin-top: 10vh;
+  overflow: auto;
+}
+.vf-left-bar {
+  width: 15vw;
+  height: 90vh;
+  float: left;
+}
