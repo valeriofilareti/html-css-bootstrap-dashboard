@@ -53,6 +53,7 @@ main {
   height: calc(100vh - 60px);
   overflow: auto;
   margin-top: 60px;
+  background-color: #f7f7f8;
 }
 .main-top {
   background-color: #1d72e8;
@@ -96,9 +97,27 @@ main .left-col {
 main .right-col {
   width: 100%;
 }
+.card h2 {
+  width: 100%;
+  border-bottom: 1px solid #dee2e8  ;
+  padding: 10px;
+  background-color: #f7f7f8;
+  overflow: hidden;
+}
 /* table */
-table th {
-  padding-right: 100px;
+table {
+  font-size: 12px;
+}
+table .table-fix {
+  width: 98px;
+}
+table .class-avatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+table .class-avatar-img {
+  width: 100%;
 }
 /* /table */
 /* /main */
