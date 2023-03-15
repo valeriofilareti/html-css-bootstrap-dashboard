@@ -42,19 +42,21 @@
   <!-- left-bar -->
   <section class="vf-left-bar d-flex flex-column justify-content-between">
     <div class="vf-container">
-      <div class="row row-cols-2">
+      <div class="row row-cols-2 py-1">
         <div class="col-1">
           <i class="fa-solid fa-house"></i>
         </div>
-        <div class="col d-none d-md-block">Home</div>
+        <div class="col d-none d-md-block">
+          Home
+        </div>
       </div>
-      <div class="row row-cols-2">
+      <div class="row row-cols-2 py-1">
         <div class="col-1">
           <i class="fa-solid fa-chart-simple"></i>
         </div>
         <div class="col d-none d-md-block">Stats</div>
       </div>
-      <div class="row row-cols-2">
+      <div class="row row-cols-2 py-1">
         <div class="col-1">
           <i class="fa-solid fa-signal"></i>
         </div>
@@ -100,14 +102,16 @@
           <div class="col">
             <!-- tabella -->
             <div class="card">
-              <h3>Prossime Classi</h3>
+              <div class="card-header">
+                <h4>Prossime classi</h4>
+              </div>
               <div class="p-2">
                 <table class="table">
                   <thead>
                     <tr>
                       <th scope="col">Nome</th>
-                      <th class="table-fix" scope="col">Data Inizio</th>
-                      <th class="table-fix" scope="col">ROI</th>
+                      <th class="table-fix d-none d-md-table-cell" scope="col">Data Inizio</th>
+                      <th class="table-fix d-none d-md-table-cell" scope="col">ROI</th>
                       <th class="table-fix" scope="col">Stato</th>
                       <th class="table-fix" scope="col">Azioni</th>
                     </tr>
@@ -120,8 +124,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>Otto</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">Otto</td>
                       <td>@mdo</td>
                       <td>@mdo</td>
                     </tr>
@@ -132,8 +136,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>Thornton</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">Thornton</td>
                       <td>@fat</td>
                       <td>@fat</td>
                     </tr>
@@ -144,8 +148,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>the Bird</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">the Bird</td>
                       <td>@twitter</td>
                       <td>@twitter</td>
                     </tr>
@@ -156,8 +160,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>the Bird</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">the Bird</td>
                       <td>@twitter</td>
                       <td>@twitter</td>
                     </tr>
@@ -168,8 +172,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>the Bird</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">the Bird</td>
                       <td>@twitter</td>
                       <td>@twitter</td>
                     </tr>
@@ -180,8 +184,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>the Bird</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">the Bird</td>
                       <td>@twitter</td>
                       <td>@twitter</td>
                     </tr>
@@ -192,8 +196,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>the Bird</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">the Bird</td>
                       <td>@twitter</td>
                       <td>@twitter</td>
                     </tr>
@@ -204,8 +208,8 @@
                         </div>
                         <span>Classe 76</span>
                       </th>
-                      <td>15 Feb 2021</td>
-                      <td>the Bird</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-md-table-cell">the Bird</td>
                       <td>@twitter</td>
                       <td>@twitter</td>
                     </tr>
@@ -218,7 +222,9 @@
           <!-- accordion -->
           <div class="col">
             <div class="card">
-              <h3>faq</h3>
+              <div class="card-header d-flex align-items-center">
+                <h4>F.A.Q.</h4>
+              </div>
               <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
@@ -253,7 +259,7 @@
               </div>
             </div>
           </div>
-          <!-- accordion -->
+          <!-- /accordion -->
         </div>
       </div>
       <div class="col right-col">
@@ -261,7 +267,9 @@
           <!-- tod -->
           <div class="col todo">
             <div class="card">
-              <h3>Todo</h3>
+              <div class="card-header">
+                <h4>Todo</h4>
+              </div>
               <div class="card m-3">
                 <div class="row d-flex flex-column">
                   <div class="col">
@@ -288,7 +296,21 @@
           </div>
           <!-- /tod -->
           <!-- graphics -->
-          <div class="col">graphics</div>
+          <div class="col">
+            <div class="card">
+              <img src="img/stats.jpeg" alt="">
+              <div class="border-bottom p-3">
+                <span class="fs-5">Utenti attivi</span><br>
+                <span>Lista degli utenti attivi nell'ultimo mese</span>
+              </div>
+              <div class="border-bottom p-3">
+                <span>Lista degli utenti attivi nell'ultimo mese</span>
+              </div>
+              <div class="border-bottom p-3">
+                <span>Lista degli utenti attivi nell'ultimo mese</span>
+              </div>
+            </div>
+          </div>
           <!-- /graphics -->
         </div>
       </div>
