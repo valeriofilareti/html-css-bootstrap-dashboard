@@ -5,6 +5,9 @@
 .vf-container {
   width: 100%;
 }
+.vf-left-bar, main .main-top {
+  color: white;
+}
 /* header */
 header {
   height: 60px;
@@ -40,6 +43,8 @@ header input:focus {
   height: calc(100vh - 60px);
   float: left;
   padding: 5px;
+  background-image: url(../img/sidebar-bg.png);
+  filter: invert(1);
 }
 /* /left-bar */
 /* main */
@@ -50,8 +55,52 @@ main {
   margin-top: 60px;
 }
 .main-top {
-  background-color: aqua;
+  background-color: #1d72e8;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
+.main-top > .row {
+  width: 100%;
+}
+.main-top .boolean span:first-child, .main-top .online-studs {
+  font-size: 28px;
+}
+.main-top .boolean span:not(.main-top .boolean span:first-child) {
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid transparent;
+  padding: 3px;
+  border-radius: 15px;
+  background-color: #165bba;
+}
+.main-top .plus {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.main-top button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+main .left-col {
+  width: 100%;
+}
+main .right-col {
+  width: 100%;
+}
+/* table */
+table th {
+  padding-right: 100px;
+}
+/* /table */
 /* /main */
 
 
@@ -74,8 +123,12 @@ main {
   header .mobile-logo {
     display: none;
   }
-}
-@media screen and (min-width:768px)  {
+  main .left-col {
+    width: 70%;
+  }
+  main .right-col {
+    width: 30%;
+  }
   .stud {
     order: 3;
   }

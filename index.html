@@ -40,25 +40,33 @@
   </header>
   <!-- /header -->
   <!-- left-bar -->
-  <section class="vf-left-bar d-flex flex-column justify-content-between debug">
+  <section class="vf-left-bar d-flex flex-column justify-content-between">
     <div class="vf-container">
       <div class="row row-cols-2">
-        <div class="col-1">X</div>
-        <div class="col d-none d-md-block">voce</div>
+        <div class="col-1">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="col d-none d-md-block">Home</div>
       </div>
       <div class="row row-cols-2">
-        <div class="col-1">X</div>
-        <div class="col d-none d-md-block">voce</div>
+        <div class="col-1">
+          <i class="fa-solid fa-chart-simple"></i>
+        </div>
+        <div class="col d-none d-md-block">Stats</div>
       </div>
       <div class="row row-cols-2">
-        <div class="col-1">X</div>
-        <div class="col d-none d-md-block">voce</div>
+        <div class="col-1">
+          <i class="fa-solid fa-signal"></i>
+        </div>
+        <div class="col d-none d-md-block">Signals</div>
       </div>
     </div>
     <div class="vf-container">
       <div class="row">
-        <div class="col-1">X</div>
-        <div class="col d-none d-md-block">voce</div>
+        <div class="col-1">
+          <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="col d-none d-md-block">Admin</div>
       </div>
     </div>
   </section>
@@ -67,22 +75,66 @@
   <main>
     <!-- main-top -->
     <div class="main-top">
-      <div class="row mx-0 row-cols-1 row-cols-md-3">
-        <div class="col-sm-2 stud">studente</div>
-        <div class="col-sm-5 boolean">boolean</div>
-        <div class="col-sm-4">online</div>
+      <div class="row mx-0 row-cols-1 row-cols-md-3 d-flex">
+        <div class="col-sm-2 stud py-2 text-md-end my-2">
+          <span>Nuovo Studente</span>
+          <button><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="col-sm-5 boolean my-2">
+          <span>Boolean</span>
+          <span>Piano blaze</span><br>
+          <span>3 app</span>
+          <span class="plus text-center">+</span>
+        </div>
+        <div class="col-sm-4 my-2">
+          <span>Studenti online negli ultimi 30 minuti</span><br>
+          <span class="online-studs">135</span>
+        </div>
       </div>
     </div>
     <!-- /main-top -->
     <!-- main-section -->
     <div class="row mx-0 row-cols-1 row-cols-md-2">
-      <div class="col">
+      <div class="col left-col">
         <div class="row row-cols-1">
-          <div class="col">studenti</div>
+          <div class="col">
+            <div class="card">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div class="col">faq</div>
         </div>
       </div>
-      <div class="col">
+      <div class="col right-col">
         <div class="row row-cols-1">
           <div class="col">todo</div>
           <div class="col">graphics</div>
