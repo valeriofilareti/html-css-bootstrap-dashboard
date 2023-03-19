@@ -80,7 +80,27 @@
       <div class="row mx-0 row-cols-1 row-cols-md-3 d-flex">
         <div class="col-sm-2 stud py-2 text-md-end my-2">
           <span>Nuovo Studente</span>
-          <button><i class="fa-solid fa-plus"></i></button>
+          <!-- offcanvas -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- form -->
+              <form action="">
+                <div class="row">
+                  <div class="col">
+                  <input type="text">
+                  </div>
+                  <div class="col"></div>
+                </div>
+              </form>
+              <!-- form -->
+            </div>
+          </div>
+          <!-- offcanvas -->
         </div>
         <div class="col-sm-5 boolean my-2">
           <span>Boolean</span>
@@ -106,7 +126,7 @@
                 <h4>Prossime classi</h4>
               </div>
               <div class="p-2">
-                <table class="table">
+                <table class="table table-hover">
                   <thead>
                     <tr>
                       <th scope="col">Nome</th>

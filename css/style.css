@@ -39,21 +39,28 @@ header input:focus {
 /* /header */
 /* left-bar */
 .vf-left-bar {
-  width: 60px;
+  width: 70px;
   height: calc(100vh - 60px);
   float: left;
-  padding: 5px;
+  padding: 25px;
   background-image: url(../img/sidebar-bg.png);
-  filter: invert(1);
+  background-color: #041e34;
+}
+.vf-left-bar .row {
+  cursor: pointer;
+}
+.vf-left-bar .row:hover {
+  background-color: rgba(250, 250, 250, .3);
 }
 /* /left-bar */
 /* main */
 main {
-  width: calc(100% - 60px) ;
+  width: calc(100% - 70px) ;
   height: calc(100vh - 60px);
   overflow: auto;
   margin-top: 60px;
   background-color: #f7f7f8;
+  font-size: 12px;
 }
 .main-top {
   background-color: #1d72e8;
@@ -91,31 +98,26 @@ main {
   margin-left: 8px;
   border-radius: 5px;
 }
-main .left-col {
-  width: 100%;
-}
-main .right-col {
+main .left-col, main .right-col {
   width: 100%;
 }
 main .card {
   margin-bottom: 20px;
 }
-main h3 {
-  width: 100%;
-  border-bottom: 1px solid #dee2e8  ;
-  padding: 10px;
-  background-color: #f7f7f8;
-  overflow: hidden;
+main .card-header h4 {
+  margin-top: 10px;
 }
-main .accordion-item {
-  padding: 0;
-} 
+/* tod */
 .todo .todo-box {
   padding: 5px;
 }
 .todo .todo-box.vf-border {
   border-bottom: 1px solid #dee2e8;
 }
+.todo input {
+  margin-right: 5px;
+}
+/* /tod */
 /* table */
 table {
   font-size: 12px;
